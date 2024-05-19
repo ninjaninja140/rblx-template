@@ -33,5 +33,5 @@ jobs:
 
                         - uses: actions/upload-artifact@v4.3.1
                           with:
-                                  name: Publish build to repository artifacts
+                                  name: ${{github.event.repository.name}}-${{ github.ref_name }}.rbxm
                                   path: ${{github.event.repository.name}}-${{ github.ref_name }}.rbxm
